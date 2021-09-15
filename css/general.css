@@ -118,6 +118,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.75px;
 }
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -126,9 +127,25 @@ body {
   padding: 1.6rem 3.4rem;
   border-radius: 0.9rem;
   text-decoration: none;
+
+  /* only necessary for .btn*/
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
   /* put transition in aorginal "state */
   transition: all 0.3s;
 }
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+.btn-form:hover {
+  background-color: #fff;
+  color: #555;
+}
+
 .btn-full:link,
 .btn-full:visited {
   background-color: #e67e22;
@@ -200,7 +217,11 @@ body {
   height: 3rem;
   color: #e67e22;
 }
+*:focus {
+  outline: none;
 
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
 /* ************************** */
 /* HELPER/SETTING CLASSES */
 /* *********************** */
