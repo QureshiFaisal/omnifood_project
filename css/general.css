@@ -27,7 +27,7 @@ Paragraph default: 1.6
 #6F6F6F LIGHTEST GREY ALLOWED ON  #fdf2e9
 
 ----03 SHADOWS---
-
+ box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 ----04 BORDER-RADIUS---
 11px
 ----05 WHITESPACE----
@@ -63,7 +63,17 @@ body {
   display: grid;
   row-gap: 9.6rem;
   column-gap: 4.6rem;
+
+  /* margin-bottom: 9.6rem; */
 }
+/* .grid:last-child {
+  margin-bottom: 0;
+} */
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+  /* this will add bottom margin only to the features section, as in the features section the last child is not a grid. */
+}
+
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
