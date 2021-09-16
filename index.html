@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Always include this line of code! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,10 +15,11 @@
     />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
     <title>Omnifood</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header nav-open">
       <a href="#">
       <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" />
     </a>
@@ -28,6 +32,12 @@
           <li><a class="main-nav-link nav-cta" href="#">Try for free</a></li>
         </ul>
       </nav>
+
+<button class="btn-mobile-nav">
+  <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+  <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+</button>
+
     </header>
     <!-- whatever is specific to a webpage should be in main and whatever will be repeated on all pages like logo, navbar, footer etc should be in main -->
     <main>
